@@ -15,14 +15,14 @@ Hands-on lab to practice security operations and network security: log collectio
 
 |ID|Title|Summary|
 |---|---|---|
-|[TR-001](https://claude.ai/chat/0.3%20Triage%20reports/TR-001%20SSH%20brute%20force%20invalid%20user.md)|SSH Brute Force|Detected repeated failed SSH logins, analyzed source and pattern, documented findings and recommended actions.|
+|[TR-001](0.3%20Triage%20reports/TR-001%20SSH%20brute%20force%20invalid%20user.md)|SSH Brute Force|Detected repeated failed SSH logins, analyzed source and pattern, documented findings and recommended actions.|
 
 ## Network Assessments
 
 |ID|Title|Summary|
 |---|---|---|
-|[NA-001](https://claude.ai/chat/0.4%20Network%20assessments/NA-001%20Household%20Network%20Segmentation.md)|Network Segmentation|Assessed a flat home network, designed a VLAN segmentation plan with default-deny firewall policies, and evaluated options under real constraints.|
-|[NA-002](https://claude.ai/chat/0.4%20Network%20assessments/NA-002%20Network%20recon%20with%20Nmap.md)|Network Recon with Nmap|Built an asset inventory, scanned for open ports and services, and prioritized risks by severity and owner.|
+|[NA-001](0.4%20Network%20assessments/NA-001%20Household%20Network%20Segmentation.md)|Network Segmentation|Assessed a flat home network, designed a VLAN segmentation plan with default-deny firewall policies, and evaluated options under real constraints.|
+|[NA-002](0.4%20Network%20assessments/NA-002%20Network%20recon%20with%20Nmap.md)|Network Recon with Nmap|Built an asset inventory, scanned for open ports and services, and prioritized risks by severity and owner.|
 
 ## Skills Practiced
 
