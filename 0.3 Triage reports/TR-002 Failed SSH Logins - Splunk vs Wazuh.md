@@ -119,10 +119,6 @@ All 8 failures landed in the **same one-second window** from a single source. Co
 	- Host `wazuh-server`
 - Evidence: `TR-002_auth.log` (working copy), ingested via Add Data at Splunk Cloud Interface.
 
-### Objective
-
-- Investigate the brute -force attack that Hydra generated, this time in Splunk. Unlike TR-001, this uses the freshly generated Hydra attack as the sample, not the original manual data. So the same attack type can be compared across both SIEMs. 
-
 ### Methodology (the pipeline)
 
 **Step 1 - Scope the search to the index.**
@@ -174,6 +170,8 @@ The next table describes the process of each aspect in both tools:
 | Severity         | Auto-assigned (level 5)                 | Analyst judges it manually |
 | Strength         | Fast, pre-built detection               | Flexible -  query anything |
 | Weakness         | Limited to existing rules               | More manual effort         |
+
+
 Wazuh classified the event, extracted the source IP, and assigned a severity automatically, the software did the analysis for me. Splunk presented raw events and left the analysis to me: I wrote the SPL and extracted the source IP myself with `rex`. Wazuh is faster out of the box but Splunk is more flexible.
 
 ## Verdict & recommendations
