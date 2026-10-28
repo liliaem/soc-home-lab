@@ -16,6 +16,7 @@ Hands-on lab to practice security operations and network security: log collectio
 |ID|Title|Summary|
 |---|---|---|
 |[TR-001](0.3%20Triage%20reports/TR-001%20SSH%20brute%20force%20invalid%20user.md)|SSH Brute Force|Detected repeated failed SSH logins, analyzed source and pattern, documented findings and recommended actions.|
+|[TR-002](0.3%20Triage%20reports/TR-002%20Failed%20SSH%20Logins%20-%20Splunk%20vs%20Wazuh.md)|Failed SSH Logins: Splunk vs Wazuh|Reproduced the brute-force scenario in Splunk using SPL, ran an authorized Hydra attack, investigated false positives, mapped to MITRE ATT&CK (T1110.001), and compared detection in Splunk vs Wazuh.|
 
 ## Network Assessments
 
