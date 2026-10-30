@@ -4,18 +4,21 @@ Hands-on lab to practice security operations and network security: log collectio
 
 ## Lab Setup
 
-|Component|Details|
-|---|---|
-|SIEM|Wazuh v4.14.8|
-|Wazuh server|Ubuntu Server 24.04.5 LTS (VM)|
-|Scanner|Nmap 7.992 on macOS (MacBook Air M3)|
-|Network|Flat home network behind an ISP-provided gateway|
+| Component    | Details                                          |
+| ------------ | ------------------------------------------------ |
+| SIEM         | Wazuh v4.14.8                                    |
+| Wazuh server | Ubuntu Server 24.04.5 LTS (VM)                   |
+| Scanner      | Nmap 7.992 on macOS (MacBook Air M3)             |
+| Network      | Flat home network behind an ISP-provided gateway |
+| Log search   | Splunk Cloud (free trial), SPL                   |
 
 ## Triage Reports
 
-|ID|Title|Summary|
-|---|---|---|
-|[TR-001](0.3%20Triage%20reports/TR-001%20SSH%20brute%20force%20invalid%20user.md)|SSH Brute Force|Detected repeated failed SSH logins, analyzed source and pattern, documented findings and recommended actions.|
+| ID                                                                                                                                                   | Title                                  | Summary                                                                                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [TR-001](0.3%20Triage%20reports/TR-001%20SSH%20brute%20force%20invalid%20user.md)                                                                    | SSH Brute Force                        | Detected repeated failed SSH logins, analyzed source and pattern, documented findings and recommended actions.                                                                               |
+| [TR-002](https://github.com/liliaem/soc-home-lab/blob/main/0.3%20Triage%20reports/TR-002%20Failed%20SSH%20Logins%20-%20Splunk%20vs%20Wazuh.md)       | Failed SSH Logins: Splunk vs Wazuh     | Investigated the same SSH brute-force logs in Splunk Cloud with SPL and compared detection and investigation workflow against Wazuh.                                                         |
+| [TR-003](0.3%20Triage%20reports/TR-003%20SPL%20queries%20to%20investigate%20an%20SSH%20brute%20force%20attack%20in%20Splunk's%20generated%20data.md) | SSH Brute Force Investigation with SPL | Investigated 33,253 failed SSH logins from 185 IPs across 4 servers with SPL; confirmed no external IP gained access, cleared internal failures as benign, and mapped to MITRE ATT&CK T1110. |
 
 ## Network Assessments
 
@@ -31,6 +34,7 @@ Hands-on lab to practice security operations and network security: log collectio
 - Deploying and configuring a SIEM
 - Reviewing and triaging security alerts
 - Log analysis and pattern recognition
+- Log investigation with SPL (Splunk)
 
 **Network security**
 

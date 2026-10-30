@@ -1,4 +1,6 @@
-**Date:** 2026-10-13 | **Analyst:** Lili | **Status:** Closed
+**Date:** 2026-10-13 
+**Analyst:** Lilia 
+**Status:** Closed
 
 ## Summary
 On 2026-10-13, Wazuh detected 4 failed SSH login attempts against wazuh-server from internal IP [REDACTED-INTERNAL-IP], targeting the non-existent user `lili`. No successful login followed. The activity was an authorized test performed by the analyst from the lab host machine. Verdict: benign true positive.
