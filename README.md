@@ -25,12 +25,21 @@ Hands-on security lab: SIEM operations, alert triage, detection engineering, net
 | ------------------------------------------------------------------------------------ | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [NA-001](0.4%20Network%20assessments/NA-001%20Household%20Network%20Segmentation.md) | Network Segmentation    | Assessed a flat home network, designed a VLAN segmentation plan with default-deny firewall policies, and evaluated options under real constraints. |
 | [NA-002](0.4%20Network%20assessments/NA-002%20Network%20recon%20with%20Nmap.md)      | Network Recon with Nmap | Built an asset inventory, scanned for open ports and services, and prioritized risks by severity and owner.                                        |
+
+## Detection Engineering
+ 
+|ID|Title|Summary|
+|---|---|---|
+|[DE-001](0.6%20Detection%20Engineering/DE-001%20Writing%20a%20Sigma%20detection,%20converting%20it%20to%20SPL%20and%20validating%20it%20with%20TR-003.md)|Sigma detection for failed SSH logins|Wrote a Sigma rule, converted it to Splunk SPL with a custom pipeline, and validated it against the TR-003 baseline (33,253 events).|
+
 ## Application Security
 
 |ID|Title|Summary|
 |---|---|---|
 |AS-001|Dependency Vulnerability Triage|Fixed a critical Next.js CVE, reduced vulnerabilities from 19 to 11, and documented accepted residual risk.|
 |AS-002|HTTP Security Headers and CSP|Added HTTP security headers and a Content Security Policy to a Next.js website.|
+
+
 ## Skills Practiced
 - **Security operations:** SIEM deployment (Wazuh, Splunk), alert triage, log investigation with SPL, MITRE ATT&CK mapping.
 - **Detection engineering:** Sigma rules, field-mapping pipelines, validation against a known baseline, reproducible Python environments.
