@@ -1,0 +1,12 @@
+name: Lab Splunk mapping
+priority: 100
+transformations:
+  - id: linux_auth_to_tutorial
+    type: add_condition
+    conditions:
+      index: tutorial
+      sourcetype: secure-2
+    rule_conditions:
+      - type: logsource
+        product: linux
+        service: auth

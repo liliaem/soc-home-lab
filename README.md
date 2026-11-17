@@ -1,16 +1,15 @@
 # SOC & Network Security Home Lab
 
-Hands-on lab to practice security operations and network security: log collection, alert triage, network reconnaissance, risk assessment, and clear technical documentation.
+Hands-on security lab: SIEM operations, alert triage, detection engineering, network security and application security, each documented as a report.
 
 ## Lab Setup
 
-| Component    | Details                                          |
-| ------------ | ------------------------------------------------ |
-| SIEM         | Wazuh v4.14.8                                    |
-| Wazuh server | Ubuntu Server 24.04.5 LTS (VM)                   |
-| Scanner      | Nmap 7.992 on macOS (MacBook Air M3)             |
-| Network      | Flat home network behind an ISP-provided gateway |
-| Log search   | Splunk Cloud (free trial), SPL                   |
+| Component         | Details                                                                                 |
+| ----------------- | --------------------------------------------------------------------------------------- |
+| SIEM              | Wazuh 4.14.8 on Ubuntu Server 24.04 (VM) · Splunk Enterprise in Docker (MacBook Air M3) |
+| Detection-as-code | Sigma rules converted to Splunk SPL with sigma-cli and pySigma                          |
+| Scanner           | Nmap 7.992 on macOS (MacBook Air M3)                                                    |
+| Network           | Flat home network behind an ISP-provided gateway                                        |
 
 ## Triage Reports
 
@@ -22,29 +21,19 @@ Hands-on lab to practice security operations and network security: log collectio
 
 ## Network Assessments
 
+| ID                                                                                   | Title                   | Summary                                                                                                                                            |
+| ------------------------------------------------------------------------------------ | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [NA-001](0.4%20Network%20assessments/NA-001%20Household%20Network%20Segmentation.md) | Network Segmentation    | Assessed a flat home network, designed a VLAN segmentation plan with default-deny firewall policies, and evaluated options under real constraints. |
+| [NA-002](0.4%20Network%20assessments/NA-002%20Network%20recon%20with%20Nmap.md)      | Network Recon with Nmap | Built an asset inventory, scanned for open ports and services, and prioritized risks by severity and owner.                                        |
+## Application Security
+
 |ID|Title|Summary|
 |---|---|---|
-|[NA-001](0.4%20Network%20assessments/NA-001%20Household%20Network%20Segmentation.md)|Network Segmentation|Assessed a flat home network, designed a VLAN segmentation plan with default-deny firewall policies, and evaluated options under real constraints.|
-|[NA-002](0.4%20Network%20assessments/NA-002%20Network%20recon%20with%20Nmap.md)|Network Recon with Nmap|Built an asset inventory, scanned for open ports and services, and prioritized risks by severity and owner.|
-
+|AS-001|Dependency Vulnerability Triage|Fixed a critical Next.js CVE, reduced vulnerabilities from 19 to 11, and documented accepted residual risk.|
+|AS-002|HTTP Security Headers and CSP|Added HTTP security headers and a Content Security Policy to a Next.js website.|
 ## Skills Practiced
-
-**Security operations**
-
-- Deploying and configuring a SIEM
-- Reviewing and triaging security alerts
-- Log analysis and pattern recognition
-- Log investigation with SPL (Splunk)
-
-**Network security**
-
-- Network reconnaissance and asset inventory
-- Port and service analysis (attack surface)
-- Network segmentation design (VLANs, zones)
-- Firewall policy design (default deny)
-
-**Reporting**
-
-- Risk prioritization by severity and asset owner
-- Writing clear incident and assessment reports
-- Sanitizing reports before publishing (IPs, MACs, identifiers)
+- **Security operations:** SIEM deployment (Wazuh, Splunk), alert triage, log investigation with SPL, MITRE ATT&CK mapping.
+- **Detection engineering:** Sigma rules, field-mapping pipelines, validation against a known baseline, reproducible Python environments.
+- **Network security:** reconnaissance and asset inventory, segmentation and default-deny firewall design.
+- **Application security:** dependency vulnerability triage, HTTP security headers and CSP.
+- **Reporting:** clear incident and assessment reports, sanitized before publishing.
