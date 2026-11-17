@@ -36,8 +36,8 @@ Hands-on security lab: SIEM operations, alert triage, detection engineering, net
 
 |ID|Title|Summary|
 |---|---|---|
-|AS-001|Dependency Vulnerability Triage|Fixed a critical Next.js CVE, reduced vulnerabilities from 19 to 11, and documented accepted residual risk.|
-|AS-002|HTTP Security Headers and CSP|Added HTTP security headers and a Content Security Policy to a Next.js website.|
+|[AS-001](0.5%20Application%20Security/AS%20-%20001%20Dependency%20Vulnerability%20Triage%20%7C%20Fixed%20a%20critical%20Next.js%20CVE,%20reduced%2019%20%E2%86%92%2011%20vulns,%20accepted%20dev-tooling%20residual%20risk..md)|Dependency Vulnerability Triage|Fixed a critical Next.js CVE, reduced vulnerabilities from 19 to 11, and documented accepted residual risk.|
+|[AS-002](0.5%20Application%20Security/AS%20-%20002%20HTTP%20security%20headers%20and%20Content%20Security%20Policy%20on%20a%20Next.js%20website.md)|HTTP Security Headers and CSP|Added HTTP security headers and a Content Security Policy to a Next.js website.|
 
 
 ## Skills Practiced
