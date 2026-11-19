@@ -43,7 +43,7 @@ Hands-on security lab: SIEM operations, alert triage, detection engineering, net
 ## 0.7 Cloud Security (Microsoft Azure)
 | ID     | Title                                               | Skills                                               |
 | ------ | --------------------------------------------------- | ---------------------------------------------------- |
-| CS-001 | Entra ID least privilege and access troubleshooting | Entra ID, Azure RBAC, sign-in and audit log analysis |
+| [CS-001](https://github.com/liliaem/soc-home-lab/blob/main/0.7%20Cloud%20Security/CS-001%20%20Entra%20ID%20least%20privilege%20and%20access%20troubleshooting.md) | Entra ID least privilege and access troubleshooting | Entra ID, Azure RBAC, sign-in and audit log analysis |
 
 ## Skills Practiced
 - **Security operations:** SIEM deployment (Wazuh, Splunk), alert triage, log investigation with SPL, MITRE ATT&CK mapping.
