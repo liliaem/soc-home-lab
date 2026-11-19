@@ -1,6 +1,6 @@
 # SOC & Network Security Home Lab
 
-Hands-on security lab: SIEM operations, alert triage, detection engineering, network security and application security, each documented as a report.
+Hands-on security lab: SIEM operations, alert triage, detection engineering, network security, application security and cloud security, each documented as a report.
 
 ## Lab Setup
 
@@ -10,6 +10,7 @@ Hands-on security lab: SIEM operations, alert triage, detection engineering, net
 | Detection-as-code | Sigma rules converted to Splunk SPL with sigma-cli and pySigma                          |
 | Scanner           | Nmap 7.992 on macOS (MacBook Air M3)                                                    |
 | Network           | Flat home network behind an ISP-provided gateway                                        |
+| Cloud             | Microsoft Azure (free trial subscription). Microsoft Entra ID (cloud-only tenant)       |
 
 ## Triage Reports
 
@@ -34,11 +35,15 @@ Hands-on security lab: SIEM operations, alert triage, detection engineering, net
 
 ## Application Security
 
-|ID|Title|Summary|
-|---|---|---|
-|[AS-001](0.5%20Application%20Security/AS%20-%20001%20Dependency%20Vulnerability%20Triage%20%7C%20Fixed%20a%20critical%20Next.js%20CVE,%20reduced%2019%20%E2%86%92%2011%20vulns,%20accepted%20dev-tooling%20residual%20risk..md)|Dependency Vulnerability Triage|Fixed a critical Next.js CVE, reduced vulnerabilities from 19 to 11, and documented accepted residual risk.|
-|[AS-002](0.5%20Application%20Security/AS%20-%20002%20HTTP%20security%20headers%20and%20Content%20Security%20Policy%20on%20a%20Next.js%20website.md)|HTTP Security Headers and CSP|Added HTTP security headers and a Content Security Policy to a Next.js website.|
+| ID                                                                                                                                                                                                                              | Title                           | Summary                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| [AS-001](0.5%20Application%20Security/AS%20-%20001%20Dependency%20Vulnerability%20Triage%20%7C%20Fixed%20a%20critical%20Next.js%20CVE,%20reduced%2019%20%E2%86%92%2011%20vulns,%20accepted%20dev-tooling%20residual%20risk..md) | Dependency Vulnerability Triage | Fixed a critical Next.js CVE, reduced vulnerabilities from 19 to 11, and documented accepted residual risk. |
+| [AS-002](0.5%20Application%20Security/AS%20-%20002%20HTTP%20security%20headers%20and%20Content%20Security%20Policy%20on%20a%20Next.js%20website.md)                                                                             | HTTP Security Headers and CSP   | Added HTTP security headers and a Content Security Policy to a Next.js website.                             |
 
+## 0.7 Cloud Security (Microsoft Azure)
+| ID     | Title                                               | Skills                                               |
+| ------ | --------------------------------------------------- | ---------------------------------------------------- |
+| CS-001 | Entra ID least privilege and access troubleshooting | Entra ID, Azure RBAC, sign-in and audit log analysis |
 
 ## Skills Practiced
 - **Security operations:** SIEM deployment (Wazuh, Splunk), alert triage, log investigation with SPL, MITRE ATT&CK mapping.
@@ -46,3 +51,4 @@ Hands-on security lab: SIEM operations, alert triage, detection engineering, net
 - **Network security:** reconnaissance and asset inventory, segmentation and default-deny firewall design.
 - **Application security:** dependency vulnerability triage, HTTP security headers and CSP.
 - **Reporting:** clear incident and assessment reports, sanitized before publishing.
+- **Cloud security (Microsoft Azure):** Entra ID identity management, Azure RBAC and least privilege, access troubleshooting, sign-in and audit log analysis.
